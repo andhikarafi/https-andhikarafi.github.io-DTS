@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" href="/img/favicon-16x16.png" type="image/gif" sizes="16x16">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Tentang</title>
+      <link rel="stylesheet" href="b45css.css">
+      <link rel="stylesheet" href="responsive.css">
+      <link rel="stylesheet" href="peoplecss.css">
+      <link rel="stylesheet" type="text/css" href="animate.css">
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header>
+      <div class="header-logo">B45</div>
+      <div class="topnav" id="myTopnav">
+          <a href="index.html">Home</a>
+          <a class="selected" href="b45tentang.html">Tentang Kami</a>
+          <a href="b45kontak.html">Kontak</a>
+          <a href="javascript:void(0);" 
+          class="menu-icon" onclick="menuFun()"><i class="fa fa-bars"></i></a>
+        </div>
+
+        <script>
+          function menuFun(){
+            var x = document.getElementById("myTopnav");
+            if(x.className === "topnav"){
+              x.className += "responsive";
+            } else {
+              x.className = "topnav"
+            }
+          }
+        </script>
+    </header>
+    
+    <div class="main animated fadeInDown">
+      <div class="copy-container">
+        <h1>TENTANG KAMI<span>.</span></h1>
+      </div>
+
+      <h3>PT B45 Tbk adalah perusahaan IT konsultan yang berdiri sejak 2020 di Indonesia.</h3> 
+      <h3>konsultasi mengenai software, hardware dan jaringan untuk kebutuhan rumahan dan perusahaan.</h3>
+    </div>  
+    <div class="heading">
+        <h2>Contributors</h2>
+    </div>  
+    <div class="peoples">
+        <div class="card">
+          <img src="img/andhikarafir.jpeg" alt="Avatar" style="width:100%">
+          <div class="wadah">
+            <h4><b>Andhika Rafi Rizkirobby</b></h4> 
+            <p>andhikarafir #8872</p> 
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/alvin.jpeg" alt="Avatar" style="width:100%">
+          <div class="wadah">
+            <h4><b>Alvin Hadiansyah</b></h4> 
+            <p>alvin #8432</p> 
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/andi.jpg" alt="Avatar" style="width:100%">
+          <div class="wadah">
+            <h4><b>Andi Irham M</b></h4> 
+            <p>AndiSatou #6825</p> 
+          </div>  
+      </div>
+    
+    </div>
+    <footer>
+      <div class="container">
+      <img src="img/phoenix.jpg">
+      <p>Regards, Phoenix Company Profil</p>
+      </div> 
+    </footer>
+  </body>
+</html>
