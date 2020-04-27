@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+       <link rel="shortcut icon" href="/img/favicon-16x16.png" type="image/gif" sizes="16x16">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Kontak</title>
+      <link rel="stylesheet" href="b45css.css">
+      <link rel="stylesheet" href="responsive.css">
+      <link rel="stylesheet" type="text/css" href="animate.css">
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header>
+      <div class="header-logo">B45</div>
+      <div class="topnav" id="myTopnav">
+          <a href="index.html">Home</a>
+          <a href="b45tentang.html">Tentang Kami</a>
+          <a class="selected" href="b45kontak.html">Kontak</a>
+          <a href="javascript:void(0);" 
+          class="menu-icon" onclick="menuFun()"><i class="fa fa-bars"></i></a>
+        </div>
+
+        <script>
+          function menuFun(){
+            var x = document.getElementById("myTopnav");
+            if(x.className === "topnav"){
+              x.className += "responsive";
+            } else {
+              x.className = "topnav"
+            }
+          }
+        </script>
+    </header>
+
+  <div class="main animated fadeInDown">
+        <div class="copy-container">
+          <h1>KONTAK<span>.</span></h1>
+        </div>
+  </div>
+  <div class="contact">
+    <div class="contact-list">
+      <img src="img/lokasi.webp">
+      <h3>Jakarta</h3>
+    </div>
+      
+    <div class="contact-list">
+      <img src="img/telpon.png">
+      <h3>Phone: 08888888888</h3>
+    </div>  
+  </div>        
+
+  <div class="contact-form">
+  <h3 class="section-title">Hubungi kami</h3>
+
+  <p>Email (Wajib Diisi)</p>
+  <input>
+  <p>Pesan (Wajib Diisi)</p>
+  <textarea></textarea>
+  <p>*Bidang Wajib Diisi</p>
+  <input class="contact-submit" type="submit" value="KIRIM">
+  </div>
+
+  <footer>
+    <div class="container">
+    <img src="img/phoenix.jpg">
+    <p>Regards, Phoenix Company Profil</p>
+    </div> 
+  </footer>
+</html>
