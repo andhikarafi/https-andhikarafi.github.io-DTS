@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcuticon" href="/img/favicon-16x16.png" type="image/gif" sizes="16x16">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link rel="stylesheet" href="b45css.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" type="text/css" href="animate.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header>
+      <div class="header-logo">B45</div>
+      <div class="topnav">
+          <a class="selected"  href="index.html">Home</a>
+          <a href="b45tentang.html">Tentang Kami</a>
+          <a href="b45kontak.html">Kontak</a>
+          <a href="javascript:void(0);" 
+          class="menu-icon" onclick="menuFun()"
+          id="myDropdown"><i class="fa fa-bars"></i></a>
+        </div>
+
+        <script>
+          function menuFun(){
+            document.getElementById("myDropdown").classList.toggle("show");
+          }
+
+          function menuFun(){
+            var x = document.getElementById("myTopnav");
+            if(x.className === "topnav"){
+              x.className += "responsive";
+            } else {
+              x.className = "topnav"
+            }
+          }
+        </script>
+    </header>
+
+    <div class="main animated fadeInDown">
+      <div class="copy-container">
+        <h1>SELAMAT DATANG<span>.</span></h1>
+        <h2>di Kelompok B45</h2>
+      </div>
+    </div>
+    <div class="konten-wrapper">
+        <div class="container">
+          <div class="kontens">
+            <div class="content">
+              <div class="konten-icon">
+                <img class="imgKonten" src="img/pelayanan.png" alt="pelayanan">
+              </div>
+              <p class="text-contents">Terima Komplain 24 Jam</p>
+            </div>
+            <div class="content">
+              <div class="konten-icon">
+                <img class="imgKonten" src="img/servis_bagus.jpg" alt="servis_bagus">
+              </div>
+              <p class="text-contents">Kualitas Terjamin</p>
+              </div>
+              <div class="content">
+                <div class="konten-icon">
+                  <img class="imgKonten" src="img/garansi.png" alt="garansi">
+                </div>
+                <p class="text-contents">Bergaransi</p>
+              </div>
+              <div class="content">
+                <div class="konten-icon">
+                  <img class="imgKonten" src="img/harga.png" alt="harga">
+                </div>
+                <p class="text-contents">Harga Terjangkau</p>
+              </div>
+              <div class="clear"></div>
+            </div>
+            
+          </div>
+        </div>    
+    </div>
+    <footer>
+      <div class="container">
+      <img src="img/phoenix.jpg">
+      <p>Regards, Phoenix Company Profil</p>
+      </div> 
+     </footer>
+  </body>
+</html>
